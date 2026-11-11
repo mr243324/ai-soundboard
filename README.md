@@ -1,4 +1,4 @@
-<div align="center">
+ <div align="center">
 
 # AI TTS Soundboard
 
@@ -24,26 +24,26 @@
 
 ## ✨ Features
 
-- ⌨️ **Type & send**: press <kbd>Enter</kbd> and the text is spoken right away over low-latency PCM streaming.
-- 🎙️ **Push-to-talk**: hold a **global hotkey** (works while the game has focus) or the big on-screen button, speak, release. Your speech is transcribed and re-spoken in the selected voice.
-- ⏱️ **Live latency readout**: speech-to-text, TTS first byte and total time for every message.
-- 🔥 **Warm connection**: the HTTPS connection to Fish Audio is kept alive and pre-opened while you type or hold push-to-talk.
-- 🎧 **Dual output**: plays to VB-CABLE (game/Discord mic) and, optionally, your headphones at the same time.
-- 🔎 **Auto-detects VB-CABLE**: `CABLE Input` is selected automatically.
-- 🛑 **Instant stop**: <kbd>F6</kbd> cuts playback and clears the queue.
-- 💾 **Persistent settings**: everything is saved to `config.json`.
-- 🧵 **Non-blocking**: synthesis, transcription and playback run on background threads, so the UI never freezes.
-- 🩺 **Readable errors**: wrong API key, no credits, bad voice ID, no internet, missing VB-CABLE.
+- **Type & send**: press <kbd>Enter</kbd> and the text is spoken right away over low-latency PCM streaming.
+- **Push-to-talk**: hold a **global hotkey** (works while the game has focus) or the big on-screen button, speak, release. Your speech is transcribed and re-spoken in the selected voice.
+- **Live latency readout**: speech-to-text, TTS first byte and total time for every message.
+- **Warm connection**: the HTTPS connection to Fish Audio is kept alive and pre-opened while you type or hold push-to-talk.
+- **Dual output**: plays to VB-CABLE (game/Discord mic) and, optionally, your headphones at the same time.
+- **Auto-detects VB-CABLE**: `CABLE Input` is selected automatically.
+- **Instant stop**: <kbd>F6</kbd> cuts playback and clears the queue.
+- **Persistent settings**: everything is saved to `config.json`.
+- **Non-blocking**: synthesis, transcription and playback run on background threads, so the UI never freezes.
+- **Readable errors**: wrong API key, no credits, bad voice ID, no internet, missing VB-CABLE.
 
-## 🔄 How it works
+## How it works
 
 ```mermaid
 flowchart LR
-    A[⌨️ Typed text] --> T
-    M[🎙️ Mic + push-to-talk] --> S[Fish Audio ASR] --> T
+    A[ Typed text] --> T
+    M[ Mic + push-to-talk] --> S[Fish Audio ASR] --> T
     T[Fish Audio TTS<br/>PCM stream] --> C[CABLE Input]
-    T --> H[🎧 Headphones]
-    C --> G[🎮 Game / Discord<br/>mic = CABLE Output]
+    T --> H[ Headphones]
+    C --> G[ Game / Discord<br/>mic = CABLE Output]
 ```
 
 ## 🚀 Quick start
