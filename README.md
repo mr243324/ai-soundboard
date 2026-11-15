@@ -66,7 +66,7 @@ pip install fish-audio-sdk customtkinter sounddevice keyboard
 ### 3. Run
 
 ```bash
-python fish_tts_soundboard.py
+python app.py
 ```
 
 > [!TIP]
